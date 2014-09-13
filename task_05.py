@@ -38,4 +38,3 @@ REPORT = '''Loan Report For: {n}
     Duration:       {T}
     Prequalified?:  {q}
     Total:          {t}'''.format(n=NAME,p=P, T=t, q=Q, t=TOTAL)
-                 
