@@ -17,58 +17,58 @@ SPARTANSAGE = ['Fractal White', 'Not White']
 
 SELECTION = raw_input('Enter one of the following parent colors {0}'.format(PARENT))
 
-if (SELECTION == 'None'):
+if SELECTION == 'None':
     TYPE = 'Base'
     COLOR = raw_input('Enter one of the following colors {0}'.format(NONE))
     while True:
-        if (not COLOR in NONE): 
+        if not COLOR in NONE: 
             print 'You have entered an invalid color'
             break
-elif (SELECTION == 'Seattle Gray'):
+elif SELECTION == 'Seattle Gray':
     TYPE = 'Accent'
     COLOR = raw_input('Enter one of the following colors {0}'.format(SEATTLEGRAY))
     while True:
-        if (not COLOR in SEATTLEGRAY):
+        if not COLOR in SEATTLEGRAY:
             print 'You have entered an invalid color'
             break
-elif (SELECTION == 'Manatee'):
+elif SELECTION == 'Manatee':
     TYPE = 'Accent'
     COLOR = raw_input('Enter one of the following colors {0}'.format(MANATEE))
     while True:
-        if (not COLOR in MANATEE):
+        if not COLOR in MANATEE:
             print 'You have entered an invalid color'
             break
-elif (SELECTION == 'Ceramic Glaze'):
+elif SELECTION == 'Ceramic Glaze':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(CERAMICGLAZE))
     while True:
-        if (not COLOR in CERAMICGLAZE):
+        if not COLOR in CERAMICGLAZE:
             print 'You have entered an invalid color'
             break
-elif (SELECTION == 'Culumus Nimbus'):
+elif SELECTION == 'Culumus Nimbus':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(CULUMUSNIMBUS))
     while True:
-        if (not COLOR in CULUMUSNIMBUS):
+        if not COLOR in CULUMUSNIMBUS:
             print 'You have entered an invalid color'
             break    
-elif (SELECTION == 'Platinum Mist'):
+elif SELECTION == 'Platinum Mist':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(PLATINUMMIST))
     while True:
-        if (not COLOR in PLATINUMMIST):
+        if not COLOR in PLATINUMMIST:
             print 'You have entered an invalid color'
             break
-elif (SELECTION == 'Spartan Sage'):
+elif SELECTION == 'Spartan Sage':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(SPARTANSAGE))
     while True:
-        if (not COLOR in SPARTANSAGE):
+        if not COLOR in SPARTANSAGE:
             print 'You have entered an invalid color'
             break
 else:
     COLOR = 'INVALID'
     SELECTION = 'INVALID'
     TYPE = 'INVALID'
-    print ('You have entered an invalid color')
+    print 'You have entered an invalid color'
 print '{0}  has a parent color of {1} and a type of {2}'.format(COLOR, SELECTION, TYPE)
