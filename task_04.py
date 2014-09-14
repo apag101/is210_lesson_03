@@ -6,7 +6,7 @@ Ternary Expressions."""
 
 
 WEEKEND = ['saturday', 'sunday']
-TIME = int(raw_input('Enter time as a 4 digit number. EG(0600)'))
+TIME = raw_input('Enter time as a 4 digit number. EG(0600)')
 DAY = raw_input('What day of the week is it ?').lower()
 SNOOZE = True if DAY in WEEKEND and TIME < 0600 else False
 
