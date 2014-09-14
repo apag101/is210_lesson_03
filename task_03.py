@@ -20,55 +20,33 @@ SELECTION = raw_input('Enter one of the following parent colors {0}'.format(PARE
 if SELECTION == 'None':
     TYPE = 'Base'
     COLOR = raw_input('Enter one of the following colors {0}'.format(NONE))
-    while True:
-        if not COLOR in NONE: 
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in NONE else None
 elif SELECTION == 'Seattle Gray':
     TYPE = 'Accent'
     COLOR = raw_input('Enter one of the following colors {0}'.format(SEATTLEGRAY))
-    while True:
-        if not COLOR in SEATTLEGRAY:
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in SEATTLEGRAY else None
 elif SELECTION == 'Manatee':
     TYPE = 'Accent'
     COLOR = raw_input('Enter one of the following colors {0}'.format(MANATEE))
-    while True:
-        if not COLOR in MANATEE:
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in MANATEE else None
 elif SELECTION == 'Ceramic Glaze':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(CERAMICGLAZE))
-    while True:
-        if not COLOR in CERAMICGLAZE:
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in CERAMICGLAZE else None
 elif SELECTION == 'Culumus Nimbus':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(CULUMUSNIMBUS))
-    while True:
-        if not COLOR in CULUMUSNIMBUS:
-            print 'You have entered an invalid color'
-            break    
+    COLOR = COLOR if COLOR in CULUMUSNIMBUS else None  
 elif SELECTION == 'Platinum Mist':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(PLATINUMMIST))
-    while True:
-        if not COLOR in PLATINUMMIST:
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in PLATINUMMIST else None
 elif SELECTION == 'Spartan Sage':
     TYPE = 'Highlight'
     COLOR = raw_input('Enter one of the following colors {0}'.format(SPARTANSAGE))
-    while True:
-        if not COLOR in SPARTANSAGE:
-            print 'You have entered an invalid color'
-            break
+    COLOR = COLOR if COLOR in SPARTANSAGE else None
 else:
-    COLOR = 'INVALID'
-    SELECTION = 'INVALID'
-    TYPE = 'INVALID'
-    print 'You have entered an invalid color'
-print '{0}  has a parent color of {1} and a type of {2}'.format(COLOR, SELECTION, TYPE)
+    if SELECTION not in PARENT or COLOR == None:
+        print 'You have entered an invalid color'
+COMPLETE = '{0}  has a parent color of {1} and a type of {2}'.format(COLOR, SELECTION, TYPE)
+print COMPLETE
