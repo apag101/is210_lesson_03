@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """LESSON3:
-TASK2 
+TASK2
 Practice simple branching."""
 
 BP_STATUS = raw_input("What is your current blood pressure?")
