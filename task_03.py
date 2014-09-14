@@ -9,7 +9,6 @@ P = [
     'Ceramic Glaze', 'Culumus Nimbus',
     'Platinum Mist', 'Spartan Sage'
 ]
- 
 NONE = ['Seattle Gray', 'Manatee']
 SG = ['Ceramic Glaze', 'Culumus Nimbus']
 MT = ['Platinum Mist', 'Spartan Sage']
