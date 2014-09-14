@@ -31,11 +31,11 @@ if int(P) > 1000000:
     if int(T) > 15 < 21 and Q == 'yes':
         R = .0262
 
-TOTAL = int(round(int(P) * ( 1 + R / N) ** (N * int(T)),0))
+TOTAL = int(round(int(P) * (1 + R / N) ** (N * int(T)), 0))
 REPORT = '''Loan Report For: {n}
 -----------------------------
     Principal:      {pr} 
     Duration:       {Time}
     Prequalified?:  {q}
-    Total:          {total}'''.format(n = NAME, pr = P, Time = T, q = Q, total = TOTAL)
+    Total:          {total}'''.format(n=NAME, pr=P, Time=T, q=Q, total=TOTAL)
 print REPORT
