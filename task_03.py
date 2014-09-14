@@ -4,9 +4,12 @@
 TASK3
 Practice nested statements."""
 
-P = ['None', 'Seattle Gray', 'Manatee', 'Ceramic Glaze',
-'Culumus Nimbus', 'Platinum Mist', 'Spartan Sage']
-
+P = [
+    'None', 'Seattle Gray', 'Manatee',
+    'Ceramic Glaze', 'Culumus Nimbus',
+    'Platinum Mist', 'Spartan Sage'
+]
+ 
 NONE = ['Seattle Gray', 'Manatee']
 SG = ['Ceramic Glaze', 'Culumus Nimbus']
 MT = ['Platinum Mist', 'Spartan Sage']
