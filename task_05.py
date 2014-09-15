@@ -12,23 +12,23 @@ N = 12
 R = 0
 
 if int(P) > 0 <= 199999:
-    if int(T) < 16:
+    if int(T) >=1 <= 15:
         R = .0363 if Q == 'yes' or Q == 'y' else .0465
-    if int(T) > 15 < 21:
+    if int(T) >= 16 <= 20:
         R = .0404 if Q == 'yes' or Q == 'y' else .0498
-    if int(T) > 20 < 31:
+    if int(T) >= 21 <= 30:
         R = .0577 if Q == 'yes' or Q == 'y' else .0639
 if int(P) >= 200000 <= 999999:
-    if int(T) < 16:
+    if int(T) >=1 <= 15:
         R = .0302 if Q == 'yes' or Q == 'y' else .0398
-    if int(T) > 15 < 21:
+    if int(T) >= 16 <= 20:
         R = .0327 if Q == 'yes' or Q == 'y' else .0408
-    if int(T) > 20 < 31 and Q == 'yes' or Q == 'y':
+    if int(T) >= 21 <= 30 and Q == 'yes' or Q == 'y':
         R = .0466
 if int(P) >= 1000000:
-    if int(T) < 16 and Q == 'yes' or Q == 'y':
+    if int(T) <= 15 and Q == 'yes' or Q == 'y':
         R = .0205
-    if int(T) > 15 < 21 and Q == 'yes' or Q == 'y':
+    if int(T) >= 16 <= 20 and Q == 'yes' or Q == 'y':
         R = .0262
 if int(P) < 1:
     TOTAL = None
