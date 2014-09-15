@@ -11,26 +11,26 @@ Q = raw_input('Are you pre-qualified ? (Yes or No)').lower()
 N = 12
 R = 0
 
-if int(P) < 200000:
+if int(P) > 0 <= 199999:
     if int(T) < 16:
         R = .0363 if Q == 'yes' or Q == 'y' else .0465
     if int(T) > 15 < 21:
         R = .0404 if Q == 'yes' or Q == 'y' else .0498
     if int(T) > 20 < 31:
         R = .0577 if Q == 'yes' or Q == 'y' else .0639
-if int(P) > 200000 < 1000000:
+if int(P) >= 200000 <= 999999:
     if int(T) < 16:
         R = .0302 if Q == 'yes' or Q == 'y' else .0398
     if int(T) > 15 < 21:
         R = .0327 if Q == 'yes' or Q == 'y' else .0408
     if int(T) > 20 < 31 and Q == 'yes' or Q == 'y':
         R = .0466
-if int(P) > 1000000:
+if int(P) >= 1000000:
     if int(T) < 16 and Q == 'yes' or Q == 'y':
         R = .0205
     if int(T) > 15 < 21 and Q == 'yes' or Q == 'y':
         R = .0262
-if int(P) in (200000, 1000000):
+if int(P) < 1:
     TOTAL = None
 else:
     TOTAL = int(round(int(P) * (1 + decimal.Decimal(R) / N) ** (N * int(T)), 0))
