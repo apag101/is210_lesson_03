@@ -30,10 +30,10 @@ if int(P) > 1000000:
         R = .0205
     if int(T) > 15 < 21 and Q == 'yes' or Q == 'y':
         R = .0262
-else:
+if int(P) == 200000 or 1000000:
     TOTAL = None
-
-TOTAL = int(round(int(P) * (1 + decimal.Decimal(R) / N) ** (N * int(T)), 0))
+else:
+    TOTAL = int(round(int(P) * (1 + decimal.Decimal(R) / N) ** (N * int(T)), 0))
 
 REPORT = '''Loan Report For: {n}
 -----------------------------
